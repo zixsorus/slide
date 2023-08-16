@@ -1,0 +1,59 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #EFEEF0;
+    font-family: 'Helvetica', sans-serif;
+  }
+  
+  form {
+    margin: 10% 25%;
+  }
+  
+  .slide-submit {
+    position: relative;
+    width: 250px;
+    height: 50px;
+    line-height: 50px;
+    background: white;
+    padding: 4px;
+    border: 1px solid #DDDDDD;
+  }
+  .slide-submit button {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 10;
+    margin: 4px;
+    width: 50%;
+    background: #DD3A3A;
+    font-weight: bold;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 2px;
+    transition: all 200ms linear;
+    cursor: pointer;
+  }
+    .slide-submit button.submitted {
+      width: 97%;
+      opacity: 0.8;
+    }
+    .slide-submit button.submitted + label {
+      display: none;
+    }
+  .slide-submit label {
+    position: absolute;
+    z-index: 8;
+    top: 0px;
+    right: 0px;
+    width: 50%;
+    font-size: 14px;
+    text-align: center;
+    color: #A7ADB3;
+    font-weight: bold;
+  }
